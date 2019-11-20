@@ -1,9 +1,9 @@
 export default class Car {
   constructor(data) {
-    this.make = data.make || "Unknown"
-    this.model = data.model || "Unknown"
-    this.year = data.year || "Unknown"
-    this.price = data.price || "Free"
+    this.make = data.make || "Unknown";
+    this.model = data.model || "Unknown";
+    this.year = data.year || "Unknown";
+    this.price = data.price || "Free";
   }
 
   getTemplate(index) {
@@ -15,6 +15,6 @@ export default class Car {
                 <h5>${this.price}</h5>
                 <button class="btn btn-danger btn-block" onclick="app.carsController.delortCar(${index})">Delort</button>
             </div>
-    `
+    `;
   }
 }
